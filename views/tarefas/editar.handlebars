@@ -1,0 +1,12 @@
+<div class="editar">
+    <h2>Editando tarefa</h2>
+    <form action="/atualizar" method="POST" class="formulario_criar_tarefa">
+        <div class="campos_criar_tarefa">
+            <input type="hidden" name="id" value="{{tarefa.id}}">
+            <input type="hidden" name="concluida" value="{{tarefa.concluida}}">
+            <input type="text" name="nome" value="{{tarefa.nome}}">
+            <input type="text" name="descricao" value="{{tarefa.descricao}}">
+            <button type="submit">Atualizar</button>
+        </div>
+    </form>
+</div>

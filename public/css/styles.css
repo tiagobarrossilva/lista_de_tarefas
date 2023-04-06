@@ -1,0 +1,119 @@
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* posição relativa */
+header, main, .home, .visualizar, .editar, .criar, footer {
+    position: relative;
+}
+
+/* posição absoluta */
+header h1, .botao_home, .home button {
+    position: absolute;
+}
+
+/* alinhar ao centro horizontal */
+.criar input, .criar button, .home, .visualizar, .editar, .criar, .editar input, .editar button, .tarefa {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* display de bloco */
+.home button, .criar *, .editar * {
+    display: block;
+}
+
+/* itens do cabeçalho */
+header {
+    padding-top: 0.5rem;
+    background-color:rgb(173, 67, 5);
+    height: 3rem;
+    font-weight: bold;
+}
+
+header h1 {
+    left: 5rem;
+    color: white;
+}
+
+.botao_home {
+    right: 10rem;
+    top: 1.2rem;
+}
+
+.botao_home a {
+    color: white;
+}
+
+/* itens da área principal da pagina */
+main {
+    background-color:darkslategrey; 
+}
+
+.home, .visualizar, .editar, .criar {
+    min-height: 32rem;
+    background-color:bisque;
+    width: 35%;
+    height: 100%;
+}
+
+#home_b1{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home_b2 {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.criar h2, .editar h2, .visualizar h2 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.criar input, .editar input {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.visualizar form {
+    display: inline;
+}
+
+.tarefa {
+    background-color:beige;
+    margin-top: 1rem;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.tarefa p {
+    padding-bottom: 0.5rem;
+}
+
+/* itens do rodape */
+footer {
+    background-color:rgb(173, 67, 5);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 2.4rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}

@@ -1,0 +1,20 @@
+<div class="visualizar">
+    <h2>Visualizando tarefas</h2>
+    {{#each tarefas}}
+    <div class="tarefa">
+        <p>Nome: {{this.nome}}</p>
+        <p>Descrição: {{this.descricao}}</p>
+        <p>Concluida: {{this.concluida}}</p>
+        <form action="/excluir" method="post">
+            <input type="hidden" name="id" value="{{this.id}}">
+            <button type="submit">Excluir</button>
+        </form>
+        <button><a href="/editar/{{this.id}}">Editar</a></button>
+        <form action="alterar_status" method="post">
+            <input type="hidden" name="id" value="{{this.id}}">
+            <input type="hidden" name="concluida" value="{{this.concluida}}">
+            <button type="submit">Alterar status</button>
+        </form>
+    </div>
+    {{/each}}
+</div>
